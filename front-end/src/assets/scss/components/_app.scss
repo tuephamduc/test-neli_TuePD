@@ -1,0 +1,110 @@
+.App {
+  background-image: url("../../images/bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.app-container {
+  max-width: 500px;
+  position: relative;
+  border: 1px solid $gray;
+  top: 20%;
+  width: 100%;
+  margin: auto;
+  background-color: $white;
+  border-radius: 15px;
+  padding: 5px;
+}
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+}
+.add-task {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+}
+.add-input {
+  flex: 1;
+  border: 0;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.add-input:focus {
+  outline: none;
+}
+.btn-submit {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: $btn-primary;
+  color: $white;
+}
+.btn-submit:hover {
+  background-color: $btn-primary-hover;
+}
+
+.notfound {
+  text-align: center;
+  height: 100px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.task-list {
+  max-height: 300px;
+  overflow: auto;
+}
+.task-item {
+  padding: 12px 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.is-finished {
+  background-color: $task-done;
+  text-decoration: line-through;
+}
+
+.task-des {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn-del {
+  color: $red;
+}
+
+.edit-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.right {
+  float: right;
+}
+.task-status {
+  appearance: none;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  border: 2px solid $gray;
+  outline: none;
+}
+.task-status:checked {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-color: $check;
+  border-color: $check-border;
+}
